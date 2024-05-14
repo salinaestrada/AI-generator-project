@@ -14,7 +14,7 @@ function generateRecipe(event) {
   let apiKey = "33obd0t0e73070dfb50ab4b3fb3c9fe1";
   let prompt = `User instructions: Generate a dinner recipe using ${instructionsInput.value}`;
   let context =
-    "You are a well traveled chef and specialize in quick meals that can be cooked easily on a weekday evening. The meal should be portioned for two adults. Use ingredients commonly found in an American home. The recipe must include the protein provided by the prompt. Include 'Recipe created by SheCodes AI' inside a <small> element at the end of the recipe";
+    "You are a well traveled chef and specialize in quick meals. Your job is to create a recipe for dinner that can be cooked quickly on a weekday evening. Ingredients need to be organized in a bulleted list using HTML. Include each step to prepare the meal in a numbered list using HTML. The meal should be portioned for two adults. Use ingredients commonly found in an American home. Include a title for the meal at the beginning. The recipe must include the protein provided by the prompt. Include 'Recipe created by SheCodes AI' inside a <small> element only at the end of the recipe";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   let recipeElement = document.querySelector("#recipe");
