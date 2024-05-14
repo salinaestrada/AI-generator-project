@@ -1,0 +1,97 @@
+body {
+  background-color: #7c73e650;
+  font-family: "Courier New", Courier, monospace;
+}
+
+a {
+  color: #7c73e6;
+  font-weight: 300;
+}
+
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 2;
+  color: #26271a;
+}
+
+.form-container {
+  padding: 30px;
+  background-color: #fafafa60;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.hint {
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+form {
+  display: flex;
+}
+
+.instruction {
+  padding: 16px;
+  border: 1px solid;
+  width: 80%;
+  font-size: 16px;
+  border-radius: 10px;
+  line-height: 20px;
+}
+
+.submit-button {
+  margin-left: 10px;
+  background-color: #7c73e670;
+  border-radius: 50px;
+  font-size: 16px;
+  border: none;
+  padding: 15px 24px;
+}
+
+.recipe {
+  padding: 30px;
+  font-size: 16px;
+  background-color: #fafafa60;
+  border-radius: 10px;
+  line-height: 2;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  border-left: 3px solid #7c73e670;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.recipe small {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+  display: none;
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
